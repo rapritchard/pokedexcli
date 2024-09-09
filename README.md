@@ -1,0 +1,1 @@
+A Pokedex from the comfort of your terminal, so you don't need to go into tall grass.
