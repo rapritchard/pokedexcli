@@ -11,4 +11,4 @@ A Pokedex from the comfort of your terminal, so you don't need to go into tall g
 | explore {area_name}    | Displays a list of Pokemon that can be found in a given area.    |
 | catch {pokemon_name}    | Attempt to catch the provided Pokemon and add it to your Pokedex.    |
 | inspect {pokemon_name}    | Inspect Pokemon details from your Pokedex.    |
-| Displays a list of Pokemon from your Pokedex.    | Inspect Pokemon details from your Pokedex.    |
+| pokedex    | Displays a list of Pokemon from your Pokedex.    |
