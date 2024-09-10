@@ -60,18 +60,23 @@ func getCLICommands() map[string]cliCommand {
 		},
 		"map": {
 			name:        "map",
-			description: "Displays the next twenty areas in the Pokemon universe",
+			description: "Displays the next twenty areas in the Pokemon universe.",
 			callback:    commandMap,
 		},
 		"mapb": {
 			name:        "mapb",
-			description: "Displays the last twenty areas in the Pokemon universe",
+			description: "Displays the last twenty areas in the Pokemon universe.",
 			callback:    commandMapb,
 		},
 		"explore": {
-			name:        "explore <area_name>",
-			description: "Displays a list of Pokemon that can be found in a given area",
+			name:        "explore {area_name}",
+			description: "Displays a list of Pokemon that can be found in a given area.",
 			callback:    commandExplore,
+		},
+		"catch": {
+			name:        "catch {pokemon_name}",
+			description: "Attempt to catch the provided Pokemon and add it to your Pokedex.",
+			callback:    commandCatch,
 		},
 	}
 }
