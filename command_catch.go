@@ -18,19 +18,15 @@ func commandCatch(cfg *config, args ...string) error {
 
 	const threshold = 50
 	rand := rand.IntN(pokemon.BaseExperience)
-	fmt.Println(pokemon.BaseExperience, rand, threshold)
 	fmt.Printf("Throwing a Pokeball at %s\n", pokemon.Name)
+
 	if rand > threshold {
 		fmt.Printf("%s escaped!\n", pokemon.Name)
 		return nil
 	}
+
 	fmt.Printf("%s was caught!\n", pokemon.Name)
 	cfg.pokedex[pokemon.Name] = pokemon
-
-	fmt.Println("Current Pokemon in Pokedex:")
-	for _, p := range cfg.pokedex {
-		fmt.Printf(" - %s\n", p.Name)
-	}
 
 	return nil
 }
