@@ -4,7 +4,7 @@ import "fmt"
 
 func commandHelp(cfg *config) error {
 	fmt.Println()
-	fmt.Println("Welcome too the Pokedex!")
+	fmt.Println("Welcome to the Pokedex!")
 	fmt.Print("Usage:\n\n")
 
 	availableCommands := getCLICommands()
